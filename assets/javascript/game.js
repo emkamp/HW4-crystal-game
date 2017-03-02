@@ -16,6 +16,7 @@ $(document).ready(function() {
     function clearGame() {
         hasWon = false;
         counter = 0;
+        var numGoal = getRandom(19, 120);
         $("#feedback").text("Click a crystal to guess a number!");
         $("#feedback-score").text(" ");
         $("#number-to-guess").text(numGoal);
